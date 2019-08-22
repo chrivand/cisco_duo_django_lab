@@ -75,27 +75,27 @@
 
 15. As mentioned, after starting the server, you can browse to `http://127.0.0.1:8000`, as shown below:
 
-<img src="https://wwwin-github.cisco.com/Application-First-Security/Training/blob/master/Labs/Duo%20Labs/screenshots/terminal.png" width="550" height="300">
+<img src="https://github.com/chrivand/cisco_duo_django_lab/blob/master/screenshots/terminal.png" width="550" height="300">
 
 16. The username and password is what you have configured in step 11 and 12. The login will look something like this (small modifications have been made to the UI):
 
-<img src="https://wwwin-github.cisco.com/Application-First-Security/Training/blob/master/Labs/Duo%20Labs/screenshots/primary_login.png" width="550" height="350">
+<img src="https://github.com/chrivand/cisco_duo_django_lab/blob/master/screenshots/primary_login.png" width="550" height="350">
 
 17. After you login with the primary authentication (via the Django DB), you can click on *Continue to secondary auth content.* to advance to Duo secondary authentication. This will look something like this:
 
-<img src="https://wwwin-github.cisco.com/Application-First-Security/Training/blob/master/Labs/Duo%20Labs/screenshots/primary_logged_in.png" width="550" height="350">
+<img src="https://github.com/chrivand/cisco_duo_django_lab/blob/master/screenshots/primary_logged_in.png" width="550" height="350">
 
 18. The first time that you continue to the secondary authentication, you will need to setup Duo just as usual (Mobile Phone + Push is recommended). You will then be prompted with the familiar Duo Prompt:
 
-<img src="https://wwwin-github.cisco.com/Application-First-Security/Training/blob/master/Labs/Duo%20Labs/screenshots/secondary_auth.png" width="400" height="350">
+<img src="https://github.com/chrivand/cisco_duo_django_lab/blob/master/screenshots/secondary_auth.png" width="400" height="350">
 
 19. When you have connected your iPhone with Duo Push, you will get prompted through the Duo Mobile App:
 
-<img src="https://wwwin-github.cisco.com/Application-First-Security/Training/blob/master/Labs/Duo%20Labs/screenshots/phone_screenshot.png" width="200" height="400">
+<img src="https://github.com/chrivand/cisco_duo_django_lab/blob/master/screenshots/phone_screenshot.png" width="200" height="400">
 
 20. After doing the Duo secondary authentication, you will reach the Duo protected page. In *views.py* you can edit the *def duo_private(request)* Django HTML to your liking. Below is an example where a hyperlink is added that links to a file server:
 
-<img src="https://wwwin-github.cisco.com/Application-First-Security/Training/blob/master/Labs/Duo%20Labs/screenshots/private_data_view.png" width="550" height="300">
+<img src="https://github.com/chrivand/cisco_duo_django_lab/blob/master/screenshots/private_data_view.png" width="550" height="300">
 
 21. On the Duo website you can create all kinds of policies, like blocking certain type of browsers or devices.
 22. You can also logout and go back to the home menu, to login with a different Duo secondary authentication (e.g. YubiKey or TouchID).
