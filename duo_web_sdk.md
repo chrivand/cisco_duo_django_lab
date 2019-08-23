@@ -17,7 +17,12 @@
 
 ## Installation instructions
 
-1. Do a Git Clone of the following repository: https://github.com/duosecurity/duo_python
+1. Do a Git Clone of the following repository: https://github.com/duosecurity/duo_python. This can be done either on the command line, by downloading the zip file or by using the GitHub Desktop client. Below is the command you need to run on the command line:
+
+```
+    git clone https://github.com/duosecurity/duo_python.git
+```
+
 2. Change directory to the cloned folder, e.g.: *cd duo_python*
 3. Create a Virtual Environement (venv) for all of the Python dependecies, e.g.: *python3.6 -m venv DUO_VENV* 
 4. Activate your Virtual Environement: *source DUO_VENV/bin/activate*
@@ -33,6 +38,7 @@
     >>> [generated Akey will be printed here]
     >>> exit()
 ```
+
 9. Fill in the generated Akey in the *settings.py* file.
 10. Now we will set up Django. First we need to run the initial database migration, by running these two commands in your Venv:
 
@@ -85,7 +91,7 @@
 
 <img src="https://wwwin-github.cisco.com/Application-First-Security/Training/blob/master/Labs/Duo%20Labs/screenshots/primary_logged_in.png" width="550" height="350">
 
-18. The first time that you continue to the secondary authentication, you will need to setup Duo just as usual (Mobile Phone + Push is recommended). You will then be prompted with the familiar Duo Prompt:
+18. The first time that you continue to the secondary authentication, you will need to setup Duo just as usual (Mobile Phone + Push is recommended). After registering your device with Duo, you will then be prompted with the familiar Duo Prompt:
 
 <img src="https://wwwin-github.cisco.com/Application-First-Security/Training/blob/master/Labs/Duo%20Labs/screenshots/secondary_auth.png" width="400" height="350">
 
