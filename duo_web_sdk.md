@@ -27,21 +27,21 @@
 3. Create a Virtual Environement (venv) for all of the Python dependecies, e.g.: 
 
 ```
-python3.6 -m venv DUO_VENV
+    python3.6 -m venv DUO_VENV
 ```
 
 4. Activate your Virtual Environement: 
 
 ```
-source DUO_VENV/bin/activate
+    source DUO_VENV/bin/activate
 ```
 
 5. Change directory to the Django demo and install all the requirements [Please take note that you either install Django 2.0.2, or modify the code!]: 
 
 ```
-cd Demos/Django
-pip install -r requirements.txt 
-pip install django==2.0.2 [OPTIONAL]
+    cd Demos/Django
+    pip install -r requirements.txt 
+    pip install django==2.0.2 [OPTIONAL]
 ```
 
 6. Add the Duo Integration Key, Secret Key and the API Host to *settings.py*. Please follow these steps to do so: https://duo.com/docs/duoweb
