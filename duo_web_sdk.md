@@ -24,9 +24,26 @@
 ```
 
 2. Change directory to the cloned folder, e.g.: *cd duo_python*
-3. Create a Virtual Environement (venv) for all of the Python dependecies, e.g.: *python3.6 -m venv DUO_VENV* 
-4. Activate your Virtual Environement: *source DUO_VENV/bin/activate*
-5. Change directory to the Django demo: *cd Demos/Django*. Install all the requirements: *pip install -r requirements.txt* [Please take note that you either install Django 2.0.2, or modify the code!]
+3. Create a Virtual Environement (venv) for all of the Python dependecies, e.g.: 
+
+```
+python3.6 -m venv DUO_VENV
+```
+
+4. Activate your Virtual Environement: 
+
+```
+source DUO_VENV/bin/activate
+```
+
+5. Change directory to the Django demo and install all the requirements [Please take note that you either install Django 2.0.2, or modify the code!]: 
+
+```
+cd Demos/Django
+pip install -r requirements.txt 
+pip install django==2.0.2 [OPTIONAL]
+```
+
 6. Add the Duo Integration Key, Secret Key and the API Host to *settings.py*. Please follow these steps to do so: https://duo.com/docs/duoweb
 7. You are missing one value (the *DUO_AKEY*), which you have to generate yourself and keep secret from Duo. The security of your Duo application is tied to the security of your skey and akey. Treat these pieces of data like a password. They should be stored in a secure manner with limited access, whether that is in a database, a file on disk, or another storage mechanism. Always transfer them via secure channels, and do not send them over unencrypted email, enter them into chat channels, or include them in other communications with Duo.
 8. Now you will actually generate an akey, which needs to be at least 40 characters long. You can generate a random string in Python by running these two commands in your Venv:
