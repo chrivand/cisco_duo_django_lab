@@ -23,7 +23,12 @@
     git clone https://github.com/duosecurity/duo_python.git
 ```
 
-2. Change directory to the cloned folder, e.g.: *cd duo_python*
+2. Change directory to the cloned folder, e.g.: 
+
+```
+    cd duo_python
+```
+
 3. Create a Virtual Environement (venv) for all of the Python dependecies, e.g.: 
 
 ```
