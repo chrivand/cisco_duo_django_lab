@@ -61,7 +61,7 @@
     >>> exit()
 ```
 
-9. Fill in the generated Akey in the *settings.py* file.
+9. Open up a code editor (e.g. Visual Studio Code), and fill in the generated Akey in the *settings.py* file (in the *duo_python/demos/django/example_site* folder).
 10. Now we will set up Django. First we need to run the initial database migration, by running these two commands in your Venv:
 
 ```
