@@ -49,7 +49,7 @@
     pip install django==2.0.2 [OPTIONAL]
 ```
 
-6. Add the Duo Integration Key, Secret Key and the API Host to *settings.py*. Please follow these steps to do so: https://duo.com/docs/duoweb
+6. Open up your code editor (e.g. Visual Studio Code), and add the Duo Integration Key, Secret Key and the API Host to *settings.py* (in the *duo_python/demos/django/example_site* folder). Please follow these steps to do so: https://duo.com/docs/duoweb
 7. You are missing one value (the *DUO_AKEY*), which you have to generate yourself and keep secret from Duo. The security of your Duo application is tied to the security of your skey and akey. Treat these pieces of data like a password. They should be stored in a secure manner with limited access, whether that is in a database, a file on disk, or another storage mechanism. Always transfer them via secure channels, and do not send them over unencrypted email, enter them into chat channels, or include them in other communications with Duo.
 8. Now you will actually generate an akey, which needs to be at least 40 characters long. You can generate a random string in Python by running these two commands in your Venv:
 
@@ -61,7 +61,7 @@
     >>> exit()
 ```
 
-9. Open up a code editor (e.g. Visual Studio Code), and fill in the generated Akey in the *settings.py* file (in the *duo_python/demos/django/example_site* folder).
+9. Open up your code editor, and fill in the generated Akey in the *settings.py* file.
 10. Now we will set up Django. First we need to run the initial database migration, by running these two commands in your Venv:
 
 ```
